@@ -123,25 +123,34 @@ Steps
 
 6) Implement the noun phrase chunker we had created at the start to extract noun phrases from the pos tagged words in the sentence
    and put them in the format of the hearst pattern patterns used to extract:
+   
    For example:
+   
    I like music like metal and rock, would be converted to,
+   
    I like NP_music like NP_metal and NP_rock
+   
  
 7) There might be cases where some noun phrases span multiple words in the sentence. We merge them into one if they do not have
    any other syntax in between them.
+   
    For example:
+   
    I like cities like New York, first converted to,
+   
    I like NP_cities like NP_New NP_York, then merged to,
+   
    I like NP_cities like NP_New_York
    
 
 8) Match the Hearst Patterns in the the sample text with re.match and output list like:
+
    [NP_music,NP_rock,NP_metal]
+
 
 9) Use the function find_hyponyms to extract hypernyms using this function from a corpus of wikipedia text 
 
-10) Feed hyponyms and hypernyms into a dictionary mapped as key:value as hypernym:hyponym even if multiple hyponyms have been extracted
-for a single hypernym
+10) Feed hyponyms and hypernyms into a dictionary mapped as key:value as hypernym:hyponym even if multiple hyponyms have been extracted for a single hypernym
 
 
 
