@@ -18,7 +18,8 @@ Steps
    
 3) Input Hearst Patterns + Additional Patterns to use for extraction:
    Format: (pattern,position of hypernym in the pattern)
-                '(NP_\\w+ (, )?such as (NP_\\w+ ?(, )?(and |or )?)+)','first'), 
+               
+               '(NP_\\w+ (, )?such as (NP_\\w+ ?(, )?(and |or )?)+)','first'), 
                 
                 '(such NP_\\w+ (, )?as (NP_\\w+ ?(, )?(and |or )?)+)','first'),
                 
