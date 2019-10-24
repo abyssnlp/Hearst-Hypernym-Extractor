@@ -152,6 +152,22 @@ Steps
 
 10) Feed hyponyms and hypernyms into a dictionary mapped as key:value as hypernym:hyponym even if multiple hyponyms have been extracted for a single hypernym
 
+11) Our Hypernyms and Hyponyms have multi-word noun phrases. We extract the noun pairs using the knowledge that the Noun phrase usually occurs at the last token/the head of the noun phrase is at the last token
+
+12) We also the step to lemmatize our hyponyms and hypernyms to get better generalization on the test data
+
+13) We extract the hypernym-hyponym pairs from the BLESS data that match the ones we extracted from Wikipedia sentences 
+
+14) We create a prediction column from both the files and map it as True=1 and False=0
+
+15) We evaluate Precision, Recall and F1 Score on the truth values and the precited pairs:
+
+### BLESS 2011 Data
+|Precision   |Recall | F1-Score|
+|------------|-------|---------|
+|0.16        |0.83   |0.30     |
+
+
 
 
 
