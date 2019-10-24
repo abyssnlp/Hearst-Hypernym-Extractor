@@ -1,6 +1,36 @@
 # Hearst-Hypernym-Extractor
 Hearst Patterns to extract Hypernyms from text
 
+> Hypernymy is the is-a relation between two words.
+
+For Example:
+Music like Rock and Metal
+
+Rock is a type of Music and Metal is a type of music
+**Hypernym** : Music
+**Hyponym**  : Rock, Metal
+
+Scope of this repository is to implement Hearst Patterns on our data(we will use various soures), to extrat Hypernyms and Hyponyms from it. We will also extend this with various other approaches (Documentation for the same will be added as and when new models are added or changes are made)
+
+**Objective :**
+Extract Hypernym-Hyponym Pairs from text corpora
+
+**Input :**
+( Dataset from https://nlp.cis.upenn.edu/)
+
+Input is a string of 288963 Wikipedia Sentences. Here is how the data looks:
+[!Wikipedia data!](/home/shaurya/Pictures/wikipedia_data.png)
+
+**Output :**
+The initial output from the program is a list of Hypernym:Hyponym pairs represented as  a python [dict](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+As we progress in our notebook, we will be evaluating various metrics on different datasets using various methods, But the goal will be the same: To extract Hypernym-Hyponym pairs from text
+
+This is what the output looks like:
+[!Hypernym Hyponym pairs extracted from Wikipedia Sentences!](/home/shaurya/Pictures/hyperhypo_dict.png)
+
+
+Facebook AI paper [Hearst Patterns Revisited](https://research.fb.com/wp-content/uploads/2018/07/Hearst-Patterns-Revisited-Automatic-Hypernym-Detection-from-Large-Text-Corpora.pdf?) shows that pattern based methods outperform other methods. 
+
 Explanation of Approach for Hearst Pattern Extraction:
 
 Hearst Patterns: [Marti Hearst]  (https://www.aclweb.org/anthology/C92-2082.pdf) paper describes certain lexico-syntactic patterns that 
