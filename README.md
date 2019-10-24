@@ -23,14 +23,14 @@ Extract Hypernym-Hyponym Pairs from text corpora
 ( Dataset from https://nlp.cis.upenn.edu/)
 
 Input is a string of 288963 Wikipedia Sentences. Here is how the data looks:
-![Wikipedia data](/home/shaurya/Pictures/wikipedia_data.png)
+![Wikipedia data](Images/wikipedia_data.png)
 
 ### Output :
 The initial output from the program is a list of Hypernym:Hyponym pairs represented as  a python [dict](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 As we progress in our notebook, we will be evaluating various metrics on different datasets using various methods, But the goal will be the same: To extract Hypernym-Hyponym pairs from text
 
 This is what the output looks like:
-![Hypernym Hyponym pairs extracted from Wikipedia Sentences](/home/shaurya/Pictures/hyperhypo_dict.png)
+![Hypernym Hyponym pairs extracted from Wikipedia Sentences](Images/hyperhypo_dict.png)
 
 
 Facebook AI paper [Hearst Patterns Revisited](https://research.fb.com/wp-content/uploads/2018/07/Hearst-Patterns-Revisited-Automatic-Hypernym-Detection-from-Large-Text-Corpora.pdf?) shows that pattern based methods outperform other methods. 
