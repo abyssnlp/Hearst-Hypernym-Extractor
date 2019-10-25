@@ -37,7 +37,7 @@ Facebook AI paper [Hearst Patterns Revisited](https://research.fb.com/wp-content
 
 Explanation of Approach for Hearst Pattern Extraction:
 
-Hearst Patterns: [Marti Hearst]  (https://www.aclweb.org/anthology/C92-2082.pdf) paper describes certain lexico-syntactic patterns that 
+Hearst Patterns: [Marti Hearst](https://www.aclweb.org/anthology/C92-2082.pdf) paper describes certain lexico-syntactic patterns that 
 occur in text which can aid in the extraction of Hypernyms. 
 
 We implement these patterns and extend it with some more patterns to extract Hearst Patterns from text.
