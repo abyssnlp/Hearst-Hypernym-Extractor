@@ -20,6 +20,7 @@ Extract Hypernym-Hyponym Pairs from text corpora
 
 ### Input :
 
+Dataset: [Wikipedia Data](https://drive.google.com/open?id=1R0mg7TFw-BY1aV-t5DONhfG2GzrPmEDY) 
 ( Dataset from https://nlp.cis.upenn.edu/)
 
 Input is a string of 288963 Wikipedia Sentences. Here is how the data looks:
@@ -52,6 +53,23 @@ Steps
    
 3) Input Hearst Patterns + Additional Patterns to use for extraction:
    Format: (pattern,position of hypernym in the pattern)
+
+   **Explanation of Patterns :**
+   Let's take for example: 
+    '(NP_\\w+ (, )?such as (NP_\\w+ ?(, )?(and |or )?)+)','first'),'
+
+    NP_ : Any word in text with the format: 'NP_'. As we noun chunk our           dataset, we implement a function to parse our text and rename the       noun phrases to NP_<noun-phrase> for example: Music becomes             NP_Music
+
+    \w+ : Any alphanumeric or underscore in the text
+
+    (, )?: Might or might not have a comma as separation
+
+    (, )?(and|or)?: The hyponyms might have be comma-separated or separated                 by 'and' or 'or'
+    first: Location of the Hypernym amongst the noun phrases in pattern
+
+
+
+
                
                '(NP_\\w+ (, )?such as (NP_\\w+ ?(, )?(and |or )?)+)','first'), 
                 
