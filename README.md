@@ -219,6 +219,10 @@ Steps
 |------------|-------|---------|
 |0.16        |0.83   |0.30     |
 
+#### About the Data
+The dataset used in this example is a post-processed version of the BLESS 2011 [paper](https://www.aclweb.org/anthology/W11-2501.pdf) by Marco Baroni and Alessandro Lenci.
+Post processed by [Levy et al.](https://www.aclweb.org/anthology/N15-1098.pdf) and provided for replication and future research. 
+
 
 #### TO ADD: Terminal execution for Code Reproducability
 
