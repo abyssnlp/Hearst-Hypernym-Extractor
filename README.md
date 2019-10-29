@@ -51,14 +51,14 @@ Example:
 **Command-Line Usage:**
 Both UNIX style and GNU style CLI commands included:
 
-'''bash
+'''shell
 
 python hypernym_extractor.py --input "data_subset.txt"
 
 '''
 
 Alternatively
-'''bash
+'''shell
 
 python hypernym_extractor.py -I "data_subset.txt"
 
