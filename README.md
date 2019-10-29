@@ -14,7 +14,7 @@ Rock is a type of Music and Metal is a type of music
 
 Scope of this repository is to implement Hearst Patterns on our data(we will use various soures), to extract Hypernyms and Hyponyms from it. We will also extend this with various other approaches (Documentation for the same will be added as and when new models are added or changes are made)
 
-**Versions: **
+**Versions:**
 
 **Python :** 3.7.3
 
