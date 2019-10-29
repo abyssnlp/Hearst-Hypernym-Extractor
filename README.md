@@ -33,6 +33,38 @@ As we progress in our notebook, we will be evaluating various metrics on differe
 This is what the output looks like:
 ![Hypernym Hyponym pairs extracted from Wikipedia Sentences](Images/hyperhypo_dict.png)
 
+**Update**
+Added a script to extract Sentence,Pattern matched and the Hypernym, Hyponym pairs from any dataset
+
+**Usage :**
+
+*Input:* A text file containing a block of strings
+Example:
+![Input for Script](Images/script_input.png)
+
+
+*Output:* A text file with Sentence matched, Pattern matched, Hypernym, Hyponyms or vice-versa depending on the parser Location
+Example:
+![Output for Script](Images/script_output.png)
+
+
+**Command-Line Usage:**
+Both UNIX style and GNU style CLI commands included:
+
+'''bash
+python hypernym_extractor.py --input "data_subset.txt"
+'''
+
+Alternatively
+'''bash
+python hypernym_extractor.py -I "data_subset.txt"
+
+
+**Output Location**
+The output is stored in the directory where the terminal is run as
+'subset_hypernyms.txt'
+
+
 
 Facebook AI paper [Hearst Patterns Revisited](https://research.fb.com/wp-content/uploads/2018/07/Hearst-Patterns-Revisited-Automatic-Hypernym-Detection-from-Large-Text-Corpora.pdf?) shows that pattern based methods outperform other methods. 
 
