@@ -51,23 +51,23 @@ Example:
 **Command-Line Usage:**
 Both UNIX style and GNU style CLI commands included:
 
-'''shell
+```shell
 
 python hypernym_extractor.py --input "data_subset.txt"
 
-'''
+```
 
 Alternatively
-'''shell
+```shell
 
 python hypernym_extractor.py -I "data_subset.txt"
 
-'''
+```
 
 **Output Location**
 The output is stored in the directory where the terminal is run as
 
-'subset_hypernyms.txt'
+`subset_hypernyms.txt`
 
 
 
