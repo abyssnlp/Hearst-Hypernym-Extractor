@@ -60,14 +60,14 @@ Example:
 
 *Output:* A text file with Sentence matched, Pattern matched, Hypernym, Hyponyms or vice-versa depending on the parser Location
 
-Parser Location in this context refers to the location of the hypernyms in the pattern specified. 
-For example: 
-`I like music like rock and metal.`
-In this example, the parser would be `first` as the hypernym `music` occurs in the beginning of the pattern followed by its hyponyms.
+>Parser Location in this context refers to the location of the hypernyms in the pattern specified. 
+>For example: 
+>`I like music like rock and metal.`
+>In this example, the parser would be `first` as the hypernym `music` occurs in the beginning of the pattern followed by its hyponyms.
 
-Alternatively:
-`Gold,silver and other kind of metals are precious`
-In this example, the parser would be `last` as the hypernym in this particular pattern i.e. `metals` is present at the end of the pattern.
+>Alternatively:
+>`Gold,silver and other kind of metals are precious`
+>In this example, the parser would be `last` as the hypernym in this particular pattern i.e. `metals` is present at the end of the pattern.
 
 
 Example:
